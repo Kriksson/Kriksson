@@ -2,7 +2,7 @@
 
 # Kriksson
 
-### Junior Backend Java Developer
+### Backend Java Developer
 
 <p>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
@@ -20,7 +20,6 @@
 
 I develop backend services, REST APIs and Telegram bots using Java and Python. I also write Lua scripts for SA-MP and have experience creating Minecraft Forge mods and automation tools.
 
-    </td>
   </tr>
 </table>
 
