@@ -25,7 +25,7 @@ I develop backend services, REST APIs and Telegram bots using Java and Python. I
 
 | ⚙️ Stack | 🎯 Interests |
 |---|---|
-| `Java`<br>`Python`<br>`Lua`<br>`Spring Boot` **<br>`REST API`<br>`Gradle`<br>`Git` | Backend development<br>Software architecture<br>Automation<br>Open Source |
+| `Java`<br>`Python`<br>`Lua`<br>`Spring Boot` <br>`REST API`<br>`Gradle`<br>`Git` | Backend development<br>Software architecture<br>Automation<br>Open Source |
 
 <table>
   <tr>
