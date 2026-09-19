@@ -50,25 +50,4 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 ### [mcskill-helper-forge](https://github.com/Kriksson/mcskill-helper-forge)
 
-Moderator-focused helper mod for Minecraft Forge 1.20.1.
-
-### [codewars](https://github.com/Kriksson/codewars)
-
-Solutions and practice for improving algorithms, problem solving, and Java fundamentals.
-
-## GitHub Stats
-
-![Followers](https://img.shields.io/github/followers/Kriksson?style=for-the-badge&label=Followers)
-![Profile repository stars](https://img.shields.io/github/stars/Kriksson/Kriksson?style=for-the-badge&label=Profile%20repo%20stars)
-![Profile commits](https://img.shields.io/github/commit-activity/y/Kriksson/Kriksson?style=for-the-badge&label=Profile%20commits)
-![Last update](https://img.shields.io/github/last-commit/Kriksson/Kriksson?style=for-the-badge&label=Last%20update)
-
-## Contributions
-
-![Contribution Snake](https://raw.githubusercontent.com/Kriksson/Kriksson/output/github-contribution-grid-snake.svg)
-
-[![Contribution activity](https://img.shields.io/github/commit-activity/y/Kriksson/Kriksson?style=flat-square&label=Contribution%20activity)](https://github.com/Kriksson?tab=overview)
-
-<p align="center">
-  <i>Learning by building. Improving one commit at a time.</i>
-</p>
+Moderator helper mod for Minecraft NeoForge 1.21.1.
