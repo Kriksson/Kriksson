@@ -1,7 +1,5 @@
 # Hi, I'm Kirill 👋
 
-### Java Backend Developer
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9D2DCF&background=5EFF8700&width=435&lines=Java+Backend+Developer;Python+TG+%26+DS+Bot's+Developer;Lua+Script's+Developer)](https://git.io/typing-svg)
 
 I build projects with Java and I'm gradually moving deeper into backend development.
