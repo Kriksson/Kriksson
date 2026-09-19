@@ -2,7 +2,7 @@
 
 ### Java Backend Developer
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1200&color=539BF5&center=false&vCenter=true&width=520&lines=Java+Backend+Developer;Building+things+with+Java;Learning+backend+development)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9D2DCF&background=5EFF8700&width=435&lines=Java+Backend+Developer;Python+TG+%26+DS+Bot's+Developer;Lua+Script's+Developer)](https://git.io/typing-svg)
 
 I build projects with Java and I'm gradually moving deeper into backend development.
 I enjoy learning through practical projects, algorithms, and clean object-oriented design.
