@@ -90,3 +90,9 @@ Moderator helper mod for Minecraft NeoForge 1.21.1.
 
 Discord role synchronization bot with Google Sheets integration.
 
+
+### [DTV-BOT](https://github.com/Kriksson/dtv-bot)
+
+
+An asynchronous Telegram bot for publishing posts to channels, checking subscriptions via a button, templates, and local pagination.
+
