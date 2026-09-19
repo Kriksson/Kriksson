@@ -2,7 +2,7 @@
 
 ### Java Backend Developer
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F700E9&width=435&lines=Java+Backend+Developer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=1200&color=539BF5&center=false&vCenter=true&width=520&lines=Java+Backend+Developer;Building+things+with+Java;Learning+backend+development)](https://git.io/typing-svg)
 
 I build projects with Java and I'm gradually moving deeper into backend development.
 I enjoy learning through practical projects, algorithms, and clean object-oriented design.
@@ -58,14 +58,16 @@ Solutions and practice for improving algorithms, problem solving, and Java funda
 
 ## GitHub Stats
 
-<div align="left">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Kriksson&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github" alt="Kriksson's GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kriksson&layout=compact&hide_border=true&theme=github_dark&langs_count=6" alt="Top languages" />
-</div>
+![Followers](https://img.shields.io/github/followers/Kriksson?style=for-the-badge&label=Followers)
+![Profile repository stars](https://img.shields.io/github/stars/Kriksson/Kriksson?style=for-the-badge&label=Profile%20repo%20stars)
+![Profile commits](https://img.shields.io/github/commit-activity/y/Kriksson/Kriksson?style=for-the-badge&label=Profile%20commits)
+![Last update](https://img.shields.io/github/last-commit/Kriksson/Kriksson?style=for-the-badge&label=Last%20update)
 
 ## Contributions
 
 ![Contribution Snake](https://raw.githubusercontent.com/Kriksson/Kriksson/output/github-contribution-grid-snake.svg)
+
+[![Contribution activity](https://img.shields.io/github/commit-activity/y/Kriksson/Kriksson?style=flat-square&label=Contribution%20activity)](https://github.com/Kriksson?tab=overview)
 
 <p align="center">
   <i>Learning by building. Improving one commit at a time.</i>
