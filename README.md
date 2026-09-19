@@ -84,3 +84,9 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 Moderator helper mod for Minecraft NeoForge 1.21.1.
 
+
+### [DS-Role-Sync-Bot](https://github.com/Kriksson/DS-RoleSync-Bot)
+
+
+Discord role synchronization bot with Google Sheets integration.
+
