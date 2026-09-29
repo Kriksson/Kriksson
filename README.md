@@ -10,7 +10,6 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 - ☕ Main language: **Java**
 - 🎯 Current goal: **Spring JDBC (`@Repository`, `JdbcTemplate`)**
-- 📈 Progress: **62 tasks completed · #63 in progress**
 - 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs**
 
 
