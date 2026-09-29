@@ -9,9 +9,9 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 
 - ☕ Main language: **Java**
-- 🌱 Current focus: **backend development**
-- 🧠 Practicing: **OOP · Algorithms & Data Structures**
-- 🛠️ Building projects to improve my backend engineering skills
+- 🎯 Current goal: **Spring JDBC (`@Repository`, `JdbcTemplate`)**
+- 📈 Progress: **62 tasks completed · #63 in progress**
+- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs**
 
 
 ## Tech Stack
@@ -46,32 +46,21 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ### Backend
 
 
-<!-- Add technologies here only after you are comfortable using them in projects. -->
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat-square&logo=openjdk&logoColor=white)
+![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white)
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
 
 
 ## Currently Learning
 
-![Spring Framework](https://img.shields.io/badge/Spring_Framework-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white)
-![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Testcontainers](https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Spring Boot Actuator](https://img.shields.io/badge/Spring_Boot_Actuator-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
-![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
-![Spring Cloud](https://img.shields.io/badge/Spring_Cloud-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
-
+![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white)
 
 <!-- Move an item to the Backend section above when it becomes part of your working stack. -->
 
@@ -95,4 +84,3 @@ Discord role synchronization bot with Google Sheets integration.
 
 
 An asynchronous Telegram bot for publishing posts to channels, checking subscriptions via a button, templates, and local pagination.
-
