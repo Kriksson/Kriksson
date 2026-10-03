@@ -10,7 +10,7 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 - ☕ Main language: **Java**
 - 🎯 Current goal: **Spring JDBC (`@Repository`, `JdbcTemplate`)**
-- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs**
+- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing**
 
 
 ## Tech Stack
