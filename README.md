@@ -10,7 +10,7 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 - ☕ Main language: **Java**
 - 🎯 Current goal: **Spring JDBC (`@Repository`, `JdbcTemplate`)**
-- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing**
+- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate**
 
 
 ## Tech Stack
@@ -54,12 +54,11 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white)
 ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
 ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
+![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white)
 
 
 ## Currently Learning
-
-![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white)
 
 <!-- Move an item to the Backend section above when it becomes part of your working stack. -->
 
