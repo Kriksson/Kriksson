@@ -91,3 +91,10 @@ Python-бот для Discord: синхронизация ролей с Google Т
 
 
 Асинхронный Telegram-бот на Python (aiogram 3, SQLite): публикация постов, проверка подписки, шаблоны, управление каналами и быстрая пагинация без лишних запросов к Telegram API.
+
+
+## Контакты
+
+
+- Telegram: [@kriksson](https://t.me/kriksson)
+- Email: [k.kriksson@gmail.com](mailto:k.kriksson@gmail.com)
