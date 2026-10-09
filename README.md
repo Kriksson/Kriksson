@@ -43,21 +43,13 @@
 ### Backend
 
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat-square&logo=openjdk&logoColor=white)
-![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white)
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
-![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
-![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![Spring MVC](https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white) ![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white) ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) ![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
+
+![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white) ![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white) ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
 
 
 ## Сейчас изучаю
