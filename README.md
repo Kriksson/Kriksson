@@ -8,7 +8,7 @@
 
 
 - ☕ Основной язык: **Java**
-- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway**
+- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security**
 
 
 ## Технологии
@@ -57,11 +57,12 @@
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
 ![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
 
 
 ## Сейчас изучаю
 
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
 <!-- Переноси технологию в Backend, когда она станет частью рабочего стека. -->
 
