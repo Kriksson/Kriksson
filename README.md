@@ -1,4 +1,4 @@
-# Hi, I'm Kirill 👋
+# Привет, я Кирилл 👋
 
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9D2DCF&background=5EFF8700&width=435&lines=Java+Backend+Developer;Python+TG+%26+DS+Bot's+Developer;Lua+Script's+Developer)](https://git.io/typing-svg)
@@ -8,15 +8,15 @@ I build projects with Java and I'm gradually moving deeper into backend developm
 I enjoy learning through practical projects, algorithms, and clean object-oriented design.
 
 
-- ☕ Main language: **Java**
-- 🎯 Current goal: **Spring Security (HTTP Basic & role-based access)**
-- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate · Spring Data JPA/Hibernate · Flyway**
+- ☕ Основной язык: **Java**
+- 🎯 Текущая цель: **Spring Security (HTTP Basic и доступ по ролям)**
+- 🧠 Практиковал: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate · Spring Data JPA/Hibernate · Flyway**
 
 
-## Tech Stack
+## Технологии
 
 
-### Languages
+### Языки программирования
 
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
@@ -24,7 +24,7 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white)
 
 
-### Testing & Build
+### Тестирование и сборка
 
 
 ![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat-square&logo=junit5&logoColor=white)
@@ -33,7 +33,7 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white)
 
 
-### Tools
+### Инструменты
 
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
@@ -61,29 +61,35 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
 
 
-## Currently Learning
+## Сейчас изучаю
 
 ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
 
-<!-- Move an item to the Backend section above when it becomes part of your working stack. -->
+<!-- Переноси технологию в Backend, когда она станет частью рабочего стека. -->
 
 
-## Featured Projects
+## Избранные проекты
+
+
+### [javaLearnAI](https://github.com/Kriksson/javaLearnAI)
+
+
+Учебный репозиторий по Java и backend-разработке: практические задания, самостоятельные решения и автоматические тесты.
 
 
 ### [mcskill-helper-forge](https://github.com/Kriksson/mcskill-helper-forge)
 
 
-Moderator helper mod for Minecraft NeoForge 1.21.1.
+Мод-помощник для модераторов Minecraft на NeoForge 1.21.1.
 
 
 ### [DS-Role-Sync-Bot](https://github.com/Kriksson/DS-RoleSync-Bot)
 
 
-Discord role synchronization bot with Google Sheets integration.
+Бот для синхронизации ролей Discord с интеграцией Google Таблиц.
 
 
 ### [DTV-BOT](https://github.com/Kriksson/dtv-bot)
 
 
-An asynchronous Telegram bot for publishing posts to channels, checking subscriptions via a button, templates, and local pagination.
+Асинхронный Telegram-бот для публикации постов в каналах, проверки подписки, работы с шаблонами и локальной пагинации.
