@@ -8,7 +8,6 @@
 
 
 - ☕ Основной язык: **Java**
-- 🎯 Текущая цель: **Spring Security (HTTP Basic и доступ по ролям)**
 - 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway**
 
 
