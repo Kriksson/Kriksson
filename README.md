@@ -72,22 +72,22 @@
 ### [javaLearnAI](https://github.com/Kriksson/javaLearnAI)
 
 
-Учебный репозиторий по Java и backend-разработке: практические задания, самостоятельные решения и автоматические тесты.
+Учебный проект по Java Backend: самостоятельная реализация REST API на Spring Boot, работа с PostgreSQL, Spring Data JPA/Hibernate, миграциями Flyway и тестами JUnit 5/MockMvc. Решения и прогресс сохранены в истории заданий.
 
 
 ### [mcskill-helper-forge](https://github.com/Kriksson/mcskill-helper-forge)
 
 
-Мод-помощник для модераторов Minecraft на NeoForge 1.21.1.
+Мод для Minecraft на NeoForge 1.21.1 с инструментами для работы модераторов.
 
 
 ### [DS-Role-Sync-Bot](https://github.com/Kriksson/DS-RoleSync-Bot)
 
 
-Бот для синхронизации ролей Discord с интеграцией Google Таблиц.
+Python-бот для Discord: синхронизация ролей с Google Таблицами, проверка участников, модерация и ручное или запланированное обновление ролей.
 
 
 ### [DTV-BOT](https://github.com/Kriksson/dtv-bot)
 
 
-Асинхронный Telegram-бот для публикации постов в каналах, проверки подписки, работы с шаблонами и локальной пагинации.
+Асинхронный Telegram-бот на Python (aiogram 3, SQLite): публикация постов, проверка подписки, шаблоны, управление каналами и быстрая пагинация без лишних запросов к Telegram API.
