@@ -9,8 +9,8 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 
 
 - ☕ Main language: **Java**
-- 🎯 Current goal: **Spring JDBC (`@Repository`, `JdbcTemplate`)**
-- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate**
+- 🎯 Current goal: **Spring Security (HTTP Basic & role-based access)**
+- 🧠 Practiced: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate · Spring Data JPA/Hibernate · Flyway**
 
 
 ## Tech Stack
@@ -56,9 +56,14 @@ I enjoy learning through practical projects, algorithms, and clean object-orient
 ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
 ![Spring JDBC](https://img.shields.io/badge/Spring_JDBC-6DB33F?style=flat-square&logo=spring&logoColor=white)
 ![JdbcTemplate](https://img.shields.io/badge/JdbcTemplate-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
+![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
 
 
 ## Currently Learning
+
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
 
 <!-- Move an item to the Backend section above when it becomes part of your working stack. -->
 
