@@ -9,7 +9,7 @@
 
 - ☕ Основной язык: **Java**
 - 🎯 Текущая цель: **Spring Security (HTTP Basic и доступ по ролям)**
-- 🧠 Практиковал: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate · Spring Data JPA/Hibernate · Flyway**
+- 🧠 Работал с: **OOP · Collections · JUnit 5 · Maven · SQL/PostgreSQL · JDBC · HTTP/JSON · Spring Boot REST APIs · Bean Validation · MockMvc integration testing · Spring JDBC · JdbcTemplate · Spring Data JPA/Hibernate · Flyway**
 
 
 ## Технологии
