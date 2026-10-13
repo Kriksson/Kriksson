@@ -62,6 +62,13 @@
 ## Избранные проекты
 
 
+### [ItemBro](https://github.com/Kriksson/item-bro)
+
+
+Учебный проект торговой площадки внутриигровых ресурсов
+Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security
+
+
 ### [javaLearnAI](https://github.com/Kriksson/javaLearnAI)
 
 
@@ -73,11 +80,6 @@
 
 Мод для Minecraft на NeoForge 1.21.1 с инструментами для работы модераторов.
 
-
-### [DS-Role-Sync-Bot](https://github.com/Kriksson/DS-RoleSync-Bot)
-
-
-Python-бот для Discord: синхронизация ролей с Google Таблицами, проверка участников, модерация и ручное или запланированное обновление ролей.
 
 
 ### [DTV-BOT](https://github.com/Kriksson/dtv-bot)
