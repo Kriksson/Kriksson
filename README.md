@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9D2DCF&background=5EFF8700&width=435&lines=Java+Backend+Developer;Python+Telegram+%26+Discord+Bots;Lua+Scripts+Developer)](https://git.io/typing-svg)
 
-Мой основной язык — Java. Изучаю backend-разработку, решаю практические задачи и постепенно расширяю технический стек.
+Мой основной язык — Java.
 
 Самостоятельно разрабатываю backend ItemBro — площадки для торговли игровыми предметами. На практике работаю с REST API, безопасностью, транзакциями, миграциями базы данных и интеграционными тестами.
 
