@@ -4,10 +4,10 @@
 
 Мой основной язык — Java.
 
-Самостоятельно разрабатываю backend ItemBro — площадки для торговли игровыми предметами. На практике работаю с REST API, безопасностью, транзакциями, миграциями базы данных и интеграционными тестами.
+Самостоятельно разработал backend ItemBro — площадки для покупки и продажи игровых предметов и цифровых услуг. На практике работаю с REST API, WebSocket, безопасностью, транзакциями, миграциями базы данных и интеграционными тестами.
 
 - ☕ Основной язык: **Java**
-- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security · Docker Compose · Testcontainers**
+- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security · Docker Compose · Testcontainers · WebSocket**
 
 ## Технологии
 
@@ -42,7 +42,7 @@
 
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white) ![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
 
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white) ![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white) ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white) ![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket-4353FF?style=flat-square&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white) ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
 
 ![Spring Boot Actuator](https://img.shields.io/badge/Spring_Boot_Actuator-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![SLF4J](https://img.shields.io/badge/SLF4J-323330?style=flat-square&logoColor=white) ![Logback](https://img.shields.io/badge/Logback-425A6B?style=flat-square&logoColor=white)
 
@@ -56,15 +56,19 @@
 
 ### [ItemBro](https://github.com/Kriksson/item-bro)
 
-Учебная площадка для торговли игровыми предметами. Разрабатываю backend на Java 21 и Spring Boot: каталог игр и объявлений, заказы с внутренним балансом, отзывы и ответы продавцов, профили пользователей и загрузка аватарок.
+Завершённый учебный проект площадки для покупки и продажи игровых предметов и цифровых услуг. Самостоятельно разработал backend на Java 21 и Spring Boot: каталог игр и сервисов, объявления с изображениями, заказы с внутренним балансом, подтверждение и возврат средств, отзывы, профили и аватарки.
 
-Spring Security: BCrypt, сессии, CSRF и разграничение доступа. Операции с заказами и балансами выполняются в транзакциях; для пользователей и заказов используется оптимистическая блокировка через `@Version`. Схема базы данных управляется Flyway.
+Чат заказа: отправка через REST, доставка новых сообщений через WebSocket, история с курсорной пагинацией и системные сообщения о действиях с заказом. Повторная отправка сообщения защищена от дублирования; WebSocket-события рассылаются после успешного коммита транзакции. Переписка сохраняется после завершения сделки, доступ проверяется для участников заказа и администратора.
 
-В репозитории опубликованы интеграционные тесты API на JUnit 5, MockMvc и Testcontainers с PostgreSQL. Для запуска используются Docker Compose и сборка приложения в multi-stage Dockerfile.
+Spring Security: BCrypt, сессии, CSRF и разграничение доступа. Операции с заказами и балансами выполняются в транзакциях; для пользователей и заказов используется оптимистическая блокировка через `@Version`. Схема базы данных управляется Flyway. Администратор может искать заказы, просматривать переписку и разбирать споры с повторным открытием, подтверждением или возвратом средств.
 
-**Backend:** Java 21 · Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · Spring Security · Flyway · JUnit 5 · MockMvc · Testcontainers · Docker Compose.
+В репозитории опубликованы интеграционные тесты API и WebSocket на JUnit 5, MockMvc и Testcontainers с PostgreSQL: права доступа, заказы и балансы, изображения, история сообщений, повторы запросов, системные события, коммит и откат транзакций. Для запуска используются Docker Compose и сборка приложения в multi-stage Dockerfile.
 
-**Интерфейс проекта:** React · TypeScript · Vite.
+**Backend:** Java 21 · Spring Boot · REST API · WebSocket · PostgreSQL · Spring Data JPA/Hibernate · Spring Security · Flyway · JUnit 5 · MockMvc · Testcontainers · Docker Compose.
+
+**Интерфейс проекта:** React · TypeScript · Vite. Тесты интерфейса — Playwright.
+
+[Скриншоты, запуск и проверки](https://github.com/Kriksson/item-bro#readme).
 
 ### [javaLearnAI](https://github.com/Kriksson/javaLearnAI)
 
