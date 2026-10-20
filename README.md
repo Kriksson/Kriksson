@@ -4,10 +4,10 @@
 
 Мой основной язык — Java.
 
-Самостоятельно разработал backend ItemBro — площадки для покупки и продажи игровых предметов и цифровых услуг. На практике работаю с REST API, WebSocket, безопасностью, транзакциями, миграциями базы данных и интеграционными тестами.
+Самостоятельно разработал backend ItemBro — площадки для покупки и продажи игровых предметов и цифровых услуг. На практике работаю с REST API, WebSocket, безопасностью, транзакциями, миграциями базы данных, интеграционными тестами и CI в GitHub Actions.
 
 - ☕ Основной язык: **Java**
-- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security · Docker Compose · Testcontainers · WebSocket**
+- 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security · Docker Compose · Testcontainers · WebSocket · GitHub Actions**
 
 ## Технологии
 
@@ -33,6 +33,7 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=111111)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 ### Backend
 
@@ -48,13 +49,13 @@
 
 ## Сейчас изучаю
 
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-
-Ближайший фокус — самостоятельная настройка CI для Spring Boot-приложений и автоматизация интеграционных тестов с PostgreSQL и Testcontainers.
+Углубляю работу с GitHub Actions и автоматизацией проверок backend-приложений.
 
 ## Избранные проекты
 
 ### [ItemBro](https://github.com/Kriksson/item-bro)
+
+[![Backend CI](https://github.com/Kriksson/item-bro/actions/workflows/backend-ci.yml/badge.svg?branch=master)](https://github.com/Kriksson/item-bro/actions/workflows/backend-ci.yml)
 
 Завершённый учебный проект площадки для покупки и продажи игровых предметов и цифровых услуг. Самостоятельно разработал backend на Java 21 и Spring Boot: каталог игр и сервисов, объявления с изображениями, заказы с внутренним балансом, подтверждение и возврат средств, отзывы, профили и аватарки.
 
@@ -64,7 +65,9 @@ Spring Security: BCrypt, сессии, CSRF и разграничение дос
 
 В репозитории опубликованы интеграционные тесты API и WebSocket на JUnit 5, MockMvc и Testcontainers с PostgreSQL: права доступа, заказы и балансы, изображения, история сообщений, повторы запросов, системные события, коммит и откат транзакций. Для запуска используются Docker Compose и сборка приложения в multi-stage Dockerfile.
 
-**Backend:** Java 21 · Spring Boot · REST API · WebSocket · PostgreSQL · Spring Data JPA/Hibernate · Spring Security · Flyway · JUnit 5 · MockMvc · Testcontainers · Docker Compose.
+Настроил CI в GitHub Actions: сборка Maven и автоматический запуск интеграционных тестов с PostgreSQL через Testcontainers при push в `master` и pull request в эту ветку. Используются кеширование зависимостей и сохранение отчётов Surefire, в том числе при падении тестов. Слияние в `master` выполняется через pull request и требует успешной проверки `backend`.
+
+**Backend:** Java 21 · Spring Boot · REST API · WebSocket · PostgreSQL · Spring Data JPA/Hibernate · Spring Security · Flyway · JUnit 5 · MockMvc · Testcontainers · Docker Compose · GitHub Actions.
 
 **Интерфейс проекта:** React · TypeScript · Vite. Тесты интерфейса — Playwright.
 
