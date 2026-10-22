@@ -2,9 +2,11 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=9D2DCF&background=5EFF8700&width=435&lines=Java+Backend+Developer;Python+Telegram+%26+Discord+Bots;Lua+Scripts+Developer)](https://git.io/typing-svg)
 
+Учусь на втором курсе РЭУ им. Г. В. Плеханова по направлению «Информационные системы и технологии».
+
 Мой основной язык — Java.
 
-Самостоятельно разработал backend ItemBro — площадки для покупки и продажи игровых предметов и цифровых услуг. На практике работаю с REST API, WebSocket, безопасностью, транзакциями, миграциями базы данных, интеграционными тестами и CI в GitHub Actions.
+В свободное время хожу в зал и прохожу технические сборки Minecraft.
 
 - ☕ Основной язык: **Java**
 - 🧠 Работал с: **Spring Boot · REST API · PostgreSQL · Spring Data JPA/Hibernate · JUnit 5 · Flyway · Spring Security · Docker Compose · Testcontainers · WebSocket · GitHub Actions**
@@ -45,11 +47,18 @@
 
 ![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logoColor=white) ![HTTP](https://img.shields.io/badge/HTTP-005571?style=flat-square&logoColor=white) ![WebSocket](https://img.shields.io/badge/WebSocket-4353FF?style=flat-square&logoColor=white) ![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white) ![Bean Validation](https://img.shields.io/badge/Bean_Validation-6DB33F?style=flat-square&logoColor=white)
 
+![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white) ![Spring Kafka](https://img.shields.io/badge/Spring_Kafka-6DB33F?style=flat-square&logo=spring&logoColor=white)
+
 ![Spring Boot Actuator](https://img.shields.io/badge/Spring_Boot_Actuator-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![SLF4J](https://img.shields.io/badge/SLF4J-323330?style=flat-square&logoColor=white) ![Logback](https://img.shields.io/badge/Logback-425A6B?style=flat-square&logoColor=white)
 
 ## Сейчас изучаю
 
-Углубляю работу с GitHub Actions и автоматизацией проверок backend-приложений.
+- **Java:** основы JVM, многопоточность, потоки и `ExecutorService`.
+- **SQL и PostgreSQL:** подзапросы, CTE и оконные функции, составные и частичные индексы, `EXPLAIN (ANALYZE, BUFFERS)`, MVCC, уровни изоляции, блокировки и deadlock.
+- **Миграции:** Liquibase.
+- **Безопасность API:** OAuth 2.0 и OpenID Connect, Authorization Code с PKCE, scopes и токены, проверка JWT, Spring Security OAuth2 Client и Resource Server.
+- **Доставка приложения:** публикация Docker-образов в registry, теги версий, environments и secrets, развёртывание на Linux через Docker Compose, проверка health и откат версии.
+- **Документация API:** OpenAPI/Swagger и Postman.
 
 ## Избранные проекты
 
@@ -75,7 +84,7 @@ Spring Security: BCrypt, сессии, CSRF и разграничение дос
 
 Учебный проект по Java Backend: самостоятельная реализация REST API на Spring Boot, работа с PostgreSQL, Spring Data JPA/Hibernate, миграциями Flyway и тестами JUnit 5/MockMvc. Решения и прогресс сохранены в истории заданий.
 
-Выполнено 98 практических заданий — от Java Core и SQL до Spring Security, Docker Compose и интеграционных тестов с Testcontainers. Последние темы: multi-stage сборка Docker-образов, readiness/liveness через Actuator и параметризованное логирование SLF4J/Logback.
+Выполнено 99 практических заданий — от Java Core и SQL до Spring Security, Docker Compose и интеграционных тестов с Testcontainers. Последние темы: multi-stage сборка Docker-образов, readiness/liveness через Actuator и параметризованное логирование SLF4J/Logback.
 
 В GitHub Actions настроен запуск интеграционных тестов с PostgreSQL в Testcontainers.
 
