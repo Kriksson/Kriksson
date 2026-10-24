@@ -100,6 +100,10 @@ Spring Security: BCrypt, сессии, CSRF и разграничение дос
 
 Telegram Mini App для быстрого выбора каналов и работы с шаблонами; веб-часть на aiohttp, асинхронная работа с SQLite через aiosqlite.
 
+### [UniCode](https://github.com/Kriksson/UniCode)
+
+Минималистичный настольный клиент для Codex CLI с организацией чатов по папкам, закреплением переписок, потоковыми ответами и уведомлениями.
+
 **Другие публичные проекты:**
 
 - [DS-RoleSync-Bot](https://github.com/Kriksson/DS-RoleSync-Bot) — Discord-бот на Python: синхронизация ролей с Google Sheets, верификация участников, ручные и периодические проверки. discord.py · gspread · Google Auth.
