@@ -84,7 +84,7 @@ Spring Security: BCrypt, сессии, CSRF и разграничение дос
 
 Учебный проект по Java Backend: самостоятельная реализация REST API на Spring Boot, работа с PostgreSQL, Spring Data JPA/Hibernate, миграциями Flyway и тестами JUnit 5/MockMvc. Решения и прогресс сохранены в истории заданий.
 
-Выполнено 99 практических заданий — от Java Core и SQL до Spring Security, Docker Compose и интеграционных тестов с Testcontainers. Последние темы: multi-stage сборка Docker-образов, readiness/liveness через Actuator и параметризованное логирование SLF4J/Logback.
+Выполнена 101 практическая задача — от Java Core и SQL до Spring Security, Docker Compose и интеграционных тестов с Testcontainers. Последние темы: Apache Kafka и Spring Kafka — partitions и offsets, независимые consumer groups, параллельная обработка сообщений тремя consumer с сохранением порядка внутри каждой partition и отправка уведомлений в HTTP-шлюз.
 
 В GitHub Actions настроен запуск интеграционных тестов с PostgreSQL в Testcontainers.
 
