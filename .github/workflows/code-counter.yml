@@ -1,0 +1,53 @@
+name: Update code counter
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update_code_counter.py'
+      - 'tests/test_code_counter.py'
+      - '.github/workflows/code-counter.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-code-counter
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.repository == 'Kriksson/Kriksson'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+
+      - name: Verify counter logic
+        run: python3 -m unittest discover -s tests -p 'test_code_counter.py' -v
+
+      - name: Read public Git history and refresh counter
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_code_counter.py --username Kriksson
+
+      - name: Commit changed statistics
+        run: |
+          git add -- assets/profile/stats/code-counter.svg assets/profile/stats/code-counter-mobile.svg metrics/code-stats.json
+          if git diff --cached --quiet; then
+            echo 'No code statistics changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'docs: refresh public code statistics'
+          git push origin HEAD:main

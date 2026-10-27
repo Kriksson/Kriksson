@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "username": "Kriksson",
+  "metric": "nonempty-source-line-additions",
+  "attribution": "github-login-or-unlinked-matching-git-name",
+  "scope": "owned-public-nonfork-default-branches",
+  "added_lines": 37021,
+  "source_commits": 168,
+  "languages": {
+    "CSS": 6385,
+    "HTML": 58,
+    "Java": 15563,
+    "JavaScript": 2754,
+    "Lua": 2989,
+    "Python": 2631,
+    "SQL": 223,
+    "TypeScript": 6418
+  },
+  "repositories": [
+    {
+      "repository": "Kriksson/codewars",
+      "branch": "main",
+      "head": "acb464883d947da09d95731a60d2fc7083306a84",
+      "added_lines": 735,
+      "languages": {
+        "Java": 735
+      },
+      "source_commits": 42
+    },
+    {
+      "repository": "Kriksson/DS-RoleSync-Bot",
+      "branch": "main",
+      "head": "c763faa05db951b23ba38bab34ee3859632083d4",
+      "added_lines": 1032,
+      "languages": {
+        "Python": 1032
+      },
+      "source_commits": 1
+    },
+    {
+      "repository": "Kriksson/dtv-bot",
+      "branch": "main",
+      "head": "264eb9744e268622c04f8aa5685fdd4c27fb8c32",
+      "added_lines": 1602,
+      "languages": {
+        "CSS": 1,
+        "HTML": 1,
+        "JavaScript": 1,
+        "Python": 1599
+      },
+      "source_commits": 2
+    },
+    {
+      "repository": "Kriksson/item-bro",
+      "branch": "master",
+      "head": "2ab1fc9bebe269fb3d1fa911e5b8b9d058ad9b36",
+      "added_lines": 15039,
+      "languages": {
+        "CSS": 5896,
+        "HTML": 27,
+        "Java": 2730,
+        "JavaScript": 1571,
+        "SQL": 97,
+        "TypeScript": 4718
+      },
+      "source_commits": 26
+    },
+    {
+      "repository": "Kriksson/javaLearnAI",
+      "branch": "main",
+      "head": "8b095a0e7338dfaa5162736dcb8d1aeedf8d8620",
+      "added_lines": 6263,
+      "languages": {
+        "Java": 6137,
+        "SQL": 126
+      },
+      "source_commits": 91
+    },
+    {
+      "repository": "Kriksson/mcskill-helper-forge",
+      "branch": "main",
+      "head": "8064fbd1b155308ba8adf07f1a6ece97321190d0",
+      "added_lines": 5961,
+      "languages": {
+        "Java": 5961
+      },
+      "source_commits": 2
+    },
+    {
+      "repository": "Kriksson/samp-lua-scripts",
+      "branch": "main",
+      "head": "397b2703fcac4e81fe75851b696b12456c6106b2",
+      "added_lines": 2989,
+      "languages": {
+        "Lua": 2989
+      },
+      "source_commits": 1
+    },
+    {
+      "repository": "Kriksson/UniCode",
+      "branch": "main",
+      "head": "054fad3ee4e82950f3e8b432e28e3fc3d0f91279",
+      "added_lines": 3400,
+      "languages": {
+        "CSS": 488,
+        "HTML": 30,
+        "JavaScript": 1182,
+        "TypeScript": 1700
+      },
+      "source_commits": 3
+    }
+  ],
+  "public_repositories": 9,
+  "contributions_last_year": 266,
+  "contributions_scope": "anonymous-public-profile-last-year",
+  "updated_at": "2026-10-25T19:34:27Z"
+}
