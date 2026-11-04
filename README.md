@@ -27,7 +27,7 @@
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile/about/bio-mobile.svg">
-  <img src="assets/profile/about/bio.svg" alt="Мой основной язык — Java. Совмещаю учёбу в университете с самостоятельным изучением backend-разработки: собираю приложения с нуля и разбираюсь в том, как они работают. В свободное время хожу в зал и играю в Factorio — строю производственные цепочки и автоматизирую процессы." width="100%">
+  <img src="assets/profile/about/bio.svg" alt="Учусь в университете, развиваюсь в Java Backend и Java QA. Создаю собственные проекты, учусь проектировать приложения и находить нестандартные решения задач. В свободное время хожу в зал и строю фабрики в Factorio :&gt;" width="100%">
 </picture>
 
 <h2>
@@ -41,9 +41,9 @@
 
 <picture><img src="assets/profile/stack/java.svg" alt="Java"></picture> <picture><img src="assets/profile/stack/lua.svg" alt="Lua"></picture>
 
-<h3><picture><img src="assets/profile/headings/testing.svg" alt="Тестирование и сборка"></picture></h3>
+<h3><picture><img src="assets/profile/headings/build.svg" alt="Сборка"></picture></h3>
 
-<picture><img src="assets/profile/stack/junit.svg" alt="JUnit"></picture> <picture><img src="assets/profile/stack/mockito.svg" alt="Mockito"></picture> <picture><img src="assets/profile/stack/mockmvc.svg" alt="MockMvc"></picture> <picture><img src="assets/profile/stack/testcontainers.svg" alt="Testcontainers"></picture> <picture><img src="assets/profile/stack/maven.svg" alt="Maven"></picture> <picture><img src="assets/profile/stack/gradle.svg" alt="Gradle"></picture>
+<picture><img src="assets/profile/stack/maven.svg" alt="Maven"></picture> <picture><img src="assets/profile/stack/gradle.svg" alt="Gradle"></picture>
 
 <h3><picture><img src="assets/profile/headings/tools.svg" alt="Инструменты"></picture></h3>
 
@@ -62,6 +62,12 @@
 <picture><img src="assets/profile/stack/apache-kafka.svg" alt="Apache Kafka"></picture> <picture><img src="assets/profile/stack/spring-kafka.svg" alt="Spring Kafka"></picture>
 
 <picture><img src="assets/profile/stack/spring-boot-actuator.svg" alt="Spring Boot Actuator"></picture> <picture><img src="assets/profile/stack/slf4j.svg" alt="SLF4J"></picture> <picture><img src="assets/profile/stack/logback.svg" alt="Logback"></picture>
+
+<h3><picture><img src="assets/profile/headings/qa.svg" alt="QA"></picture></h3>
+
+<picture><img src="assets/profile/stack/junit.svg" alt="JUnit"></picture> <picture><img src="assets/profile/stack/mockito.svg" alt="Mockito"></picture> <picture><img src="assets/profile/stack/mockmvc.svg" alt="MockMvc"></picture> <picture><img src="assets/profile/stack/testcontainers.svg" alt="Testcontainers"></picture>
+
+<picture><img src="assets/profile/stack/selenide.svg" alt="Selenide"></picture> <picture><img src="assets/profile/stack/webdrivermanager.svg" alt="WebDriverManager"></picture> <picture><img src="assets/profile/stack/page-object.svg" alt="Page Object"></picture> <picture><img src="assets/profile/stack/xpath.svg" alt="XPath"></picture>
 
 <h2>
 <picture>
@@ -112,6 +118,15 @@
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/mcskill-helper-forge-mobile.svg">
     <img src="assets/profile/projects/mcskill-helper-forge.svg" alt="MCSkill Helper — Инструменты модератора для Minecraft. Проверка чанков, лимитов блоков и домов игроков." width="100%">
+  </picture>
+</a>
+</p>
+
+<p>
+<a href="https://github.com/Kriksson/QA_Learn">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile/projects/QA_Learn-mobile.svg">
+    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — Учебные UI-автотесты на Java и Selenide. Формы, таблицы и динамические элементы." width="100%">
   </picture>
 </a>
 </p>

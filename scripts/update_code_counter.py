@@ -260,24 +260,24 @@ def render_card(data: dict, mobile: bool = False, artwork: bytes | None = None) 
     total = '+'+number(data['added_lines'])
     repos = number(data.get('public_repositories', len(data['repositories'])+1))
     contributions = number(data.get('contributions_last_year', 0))
-    width, height = (1120, 510) if mobile else (2048, 773)
-    art_width, art_height, art_y = (1120, 374, 55) if mobile else (2048, 683, 0)
-    x, y, size = (235, 107, 56) if mobile else (430, 104, 84)
+    width, height = (1120, 514) if mobile else (2048, 823)
+    art_width, art_height, art_y = (1120, 374, 140) if mobile else (2048, 683, 140)
+    x, y, size = (225, 105, 78) if mobile else (430, 103, 84)
     title = f'{total} строк кода; {repos} публичных репозиториев; {contributions} contributions за последний год.'
     body = f'<rect width="{width}" height="{height}" rx="24" fill="#0d1117"/>'
     body += f'<image x="0" y="{art_y}" width="{art_width}" height="{art_height}" href="data:image/png;base64,{embedded}"/>'
     body += f'<text x="{x}" y="{y}" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="{size}" font-weight="700" fill="#69f59b" stroke="#0d1117" stroke-width="5" paint-order="stroke">{total}</text>'
-    # Small native repo/activity pictograms; these labels never compete with the line count.
-    row_y = 461 if mobile else 712
-    positions = (66, 570) if mobile else (1010, 1490)
+    # Group all three metrics above the scene, with a compact two-line layout on phones.
+    positions = ((440, 52), (440, 108)) if mobile else ((760, 98), (1280, 98))
+    label_size = 40
     icons = ('M3 2h22v27H3z M8 2v27 M12 8h8 M12 14h8',
              'M2 27V3 M2 27h29 M7 20l7-8 7 4 10-13')
     repo_label = plural(data.get('public_repositories', len(data['repositories'])+1), 'репозиторий', 'репозитория', 'репозиториев')
     activity_label = plural(data.get('contributions_last_year', 0), 'вклад', 'вклада', 'вкладов')
     labels = (f'{repos} {repo_label}', f'{contributions} {activity_label} за год')
-    for left, icon, label in zip(positions, icons, labels):
+    for (left, row_y), icon, label in zip(positions, icons, labels):
         body += f'<g transform="translate({left},{row_y-27})" fill="none" stroke="#f6b179" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="{icon}"/></g>'
-        body += f'<text x="{left+48}" y="{row_y}" fill="#bec9d5" font-family="Noto Sans,Arial,sans-serif" font-size="32">{escape(label)}</text>'
+        body += f'<text x="{left+48}" y="{row_y}" fill="#bec9d5" font-family="Noto Sans,Arial,sans-serif" font-size="{label_size}">{escape(label)}</text>'
     return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title, quote=True)}"><title>{escape(title)}</title>{body}</svg>\n'
 
 
