@@ -69,6 +69,8 @@
 
 <picture><img src="assets/profile/stack/selenide.svg" alt="Selenide"></picture> <picture><img src="assets/profile/stack/webdrivermanager.svg" alt="WebDriverManager"></picture> <picture><img src="assets/profile/stack/page-object.svg" alt="Page Object"></picture> <picture><img src="assets/profile/stack/xpath.svg" alt="XPath"></picture>
 
+<picture><img src="assets/profile/stack/rest-assured.svg" alt="REST Assured"></picture> <picture><img src="assets/profile/stack/jsonpath.svg" alt="JsonPath"></picture>
+
 <h2>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile/headings/learning-mobile.svg">
@@ -108,7 +110,7 @@
 <a href="https://github.com/Kriksson/javaLearnAI">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/javaLearnAI-mobile.svg">
-    <img src="assets/profile/projects/javaLearnAI.svg" alt="javaLearnAI — Практика Java Backend: от первых классов до Kafka. 101 задача: самостоятельные решения и проверки." width="100%">
+    <img src="assets/profile/projects/javaLearnAI.svg" alt="javaLearnAI — Практика Java Backend: от первых классов до Kafka. 102 задачи. Kafka: повторы обработки и DLT." width="100%">
   </picture>
 </a>
 </p>
@@ -126,7 +128,7 @@
 <a href="https://github.com/Kriksson/QA_Learn">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/QA_Learn-mobile.svg">
-    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — Учебные UI-автотесты на Java и Selenide. Формы, таблицы и динамические элементы." width="100%">
+    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — Практика UI- и API-автотестов на Java. Selenide, REST Assured, формы и REST API." width="100%">
   </picture>
 </a>
 </p>
@@ -144,7 +146,7 @@
 <a href="https://github.com/Kriksson/UniCode">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/UniCode-mobile.svg">
-    <img src="assets/profile/projects/UniCode.svg" alt="UniCode — Минималистичный настольный клиент для Codex CLI. Чаты, папки, закрепления и потоковые ответы." width="100%">
+    <img src="assets/profile/projects/UniCode.svg" alt="UniCode — Клиент Codex CLI для компьютера и телефона. Чаты, папки, потоковые ответы и лимиты." width="100%">
   </picture>
 </a>
 </p>
