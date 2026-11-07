@@ -71,6 +71,8 @@
 
 <picture><img src="assets/profile/stack/rest-assured.svg" alt="REST Assured"></picture> <picture><img src="assets/profile/stack/jsonpath.svg" alt="JsonPath"></picture>
 
+<picture><img src="assets/profile/stack/jenkins.svg" alt="Jenkins"></picture> <picture><img src="assets/profile/stack/selenoid.svg" alt="Selenoid"></picture> <picture><img src="assets/profile/stack/allure.svg" alt="Allure"></picture>
+
 <h2>
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile/headings/learning-mobile.svg">
@@ -128,7 +130,7 @@
 <a href="https://github.com/Kriksson/QA_Learn">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/QA_Learn-mobile.svg">
-    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — Практика UI- и API-автотестов на Java. Selenide, REST Assured, формы и REST API." width="100%">
+    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — UI-, API- и комбинированные автотесты на Java. Jenkins, Selenoid, Allure и параллельный запуск." width="100%">
   </picture>
 </a>
 </p>
