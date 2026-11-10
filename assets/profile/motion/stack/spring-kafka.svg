@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="103" height="28" viewBox="0 0 103 28" role="img" aria-label="Spring Kafka"><defs><clipPath id="motion-frame"><rect x="1.0" y="1.0" width="101.0" height="26.0" rx="5" /></clipPath><clipPath id="motion-belt"><rect x="7.0" y="24.0" width="89.0" height="2" rx="1" /></clipPath><linearGradient id="motion-sheen" x1="0" y1="0" x2="1" y2=".2"><stop offset="0" stop-color="#e2c6a4" stop-opacity="0" /><stop offset=".46" stop-color="#e2c6a4" stop-opacity="0" /><stop offset=".5" stop-color="#e2c6a4" stop-opacity=".11" /><stop offset=".54" stop-color="#e2c6a4" stop-opacity="0" /><stop offset="1" stop-color="#e2c6a4" stop-opacity="0" /></linearGradient></defs><style>
+@keyframes profile-belt { to { transform: translateX(32px); } }
+@keyframes profile-sheen { to { transform: translateX(309px); } }
+@keyframes profile-gear { to { transform: rotate(360deg); } }
+@keyframes profile-signal { 0%,100% { opacity: .35; } 50% { opacity: .85; } }
+.profile-conveyor { animation: profile-belt 1.6s linear infinite; }
+.profile-sheen { animation: profile-sheen 9s linear infinite; animation-delay: -6.91s; }
+.profile-gear { transform-origin: 0px 0px; animation: profile-gear 24s linear infinite; }
+.profile-signal { animation: profile-signal 6s cubic-bezier(.77,0,.175,1) infinite; animation-delay: -6.91s; }
+@media (prefers-reduced-motion: reduce) {
+ .profile-conveyor, .profile-sheen, .profile-gear, .profile-signal { animation: none; }
+ .profile-sheen { opacity: 0; }
+}
+</style><title>Spring Kafka</title><rect x=".5" y=".5" width="102" height="27" rx="5" fill="#161b22" stroke="#364152" /><g clip-path="url(#motion-frame)" pointer-events="none"><rect x="-103.0" y="0.0" width="103.0" height="28.0" fill="url(#motion-sheen)" class="profile-sheen" /></g><rect x="9" y="10" width="5" height="8" rx="1.5" fill="#bfde87" /><text x="21" y="18" fill="#e4eaf1" font-family="Noto Sans, Arial, sans-serif" font-size="12" font-weight="500">Spring Kafka</text><g clip-path="url(#motion-belt)" pointer-events="none"><rect x="7.0" y="24.0" width="89.0" height="2" fill="#171d23" /><g class="profile-conveyor"><path d="M-32 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /><path d="M0 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /><path d="M32 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /><path d="M64 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /><path d="M96 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /><path d="M128 24l2 1 -2 1" fill="none" stroke="#9e7956" stroke-width="1" opacity=".55" /></g></g><rect x="9" y="10" width="5" height="8" rx="1.5" fill="#d4b28e" class="profile-signal" /></svg>

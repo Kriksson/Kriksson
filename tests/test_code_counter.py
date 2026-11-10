@@ -61,19 +61,6 @@ class CounterTests(unittest.TestCase):
             self.assertEqual(data['total_repositories'],12)
             self.assertEqual(data['added_lines'],12)
 
-    def test_hero_contains_embedded_image_and_green_counter_and_activity(self):
-        import xml.etree.ElementTree as ET
-        data = {'added_lines':37021, 'public_repositories':9, 'contributions_last_year':263, 'repositories':[]}
-        for mobile in [False, True]:
-            svg = counter.render_card(data, mobile, artwork=b'fixture')
-            tree = ET.fromstring(svg)
-            texts = tree.findall('{http://www.w3.org/2000/svg}text')
-            self.assertEqual(texts[0].text, '+37 021')
-            self.assertEqual(texts[0].get('fill'), '#69f59b')
-            self.assertEqual(tree.find('{http://www.w3.org/2000/svg}image').get('href'), 'data:image/png;base64,Zml4dHVyZQ==')
-            self.assertIn('9 репозиториев', svg)
-            self.assertIn('263 вклада за год', svg)
-
     def test_tests_and_examples_count_but_generated_code_and_dependencies_do_not(self):
         for path in ['src/App.java', 'frontend/src/main.tsx', 'db/migrations/V1.sql', 'java/solution.java',
                      'src/test/java/BankTest.java', 'tests/a.py', 'src/A.spec.ts', 'test_a.py', 'examples/Demo.java']:

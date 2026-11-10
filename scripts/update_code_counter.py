@@ -7,12 +7,10 @@ Only aggregate numbers are written to public files; private identifiers are neve
 from __future__ import annotations
 
 import argparse
-import base64
 import hashlib
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
-from html import escape
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -241,42 +239,6 @@ def account_contributions(api: GitHub, username: str) -> int:
     return value
 
 
-def plural(value: int, one: str, few: str, many: str) -> str:
-    if 11 <= value % 100 <= 14:
-        return many
-    return one if value % 10 == 1 else few if 2 <= value % 10 <= 4 else many
-
-
-def render_card(data: dict, mobile: bool = False, artwork: bytes | None = None) -> str:
-    # Raster illustration remains intact; changing numbers are native SVG text.
-    if artwork is None:
-        artwork = (Path(__file__).resolve().parents[1]/'assets/profile/about/interests.png').read_bytes()
-    embedded = base64.b64encode(artwork).decode('ascii')
-    total = '+'+number(data['added_lines'])
-    repository_count = data.get('total_repositories', data.get('public_repositories', len(data.get('repositories', []))+1))
-    repos = number(repository_count)
-    contributions = number(data.get('contributions_last_year', 0))
-    width, height = (1120, 514) if mobile else (2048, 823)
-    art_width, art_height, art_y = (1120, 374, 140) if mobile else (2048, 683, 140)
-    x, y, size = (225, 105, 78) if mobile else (430, 103, 84)
-    title = f'{total} строк кода; {repos} репозиториев (публичных и приватных); {contributions} contributions за последний год.'
-    body = f'<rect width="{width}" height="{height}" rx="24" fill="#0d1117"/>'
-    body += f'<image x="0" y="{art_y}" width="{art_width}" height="{art_height}" href="data:image/png;base64,{embedded}"/>'
-    body += f'<text x="{x}" y="{y}" text-anchor="middle" font-family="DejaVu Sans Mono,monospace" font-size="{size}" font-weight="700" fill="#69f59b" stroke="#0d1117" stroke-width="5" paint-order="stroke">{total}</text>'
-    # Group all three metrics above the scene, with a compact two-line layout on phones.
-    positions = ((440, 52), (440, 108)) if mobile else ((760, 98), (1280, 98))
-    label_size = 40
-    icons = ('M3 2h22v27H3z M8 2v27 M12 8h8 M12 14h8',
-             'M2 27V3 M2 27h29 M7 20l7-8 7 4 10-13')
-    repo_label = plural(repository_count, 'репозиторий', 'репозитория', 'репозиториев')
-    activity_label = plural(data.get('contributions_last_year', 0), 'вклад', 'вклада', 'вкладов')
-    labels = (f'{repos} {repo_label}', f'{contributions} {activity_label} за год')
-    for (left, row_y), icon, label in zip(positions, icons, labels):
-        body += f'<g transform="translate({left},{row_y-27})" fill="none" stroke="#f6b179" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="{icon}"/></g>'
-        body += f'<text x="{left+48}" y="{row_y}" fill="#bec9d5" font-family="Noto Sans,Arial,sans-serif" font-size="{label_size}">{escape(label)}</text>'
-    return f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{escape(title, quote=True)}"><title>{escape(title)}</title>{body}</svg>\n'
-
-
 def write_results(root: Path, results: list, username: str, now: str | None = None, *,
                   total_repositories: int, contributions_last_year: int) -> bool:
     path = root/'metrics/code-stats.json'
@@ -294,10 +256,7 @@ def write_results(root: Path, results: list, username: str, now: str | None = No
     unchanged = old and {k:v for k,v in old.items() if k != 'updated_at'} == stable
     data = old if unchanged else {**stable, 'updated_at': now or datetime.now(timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')}
     # All repository reads finished before any output is touched.
-    target = root/'assets/profile/stats'
-    outputs = {path: json.dumps(data, ensure_ascii=False, indent=2)+'\n',
-               target/'code-counter.svg': render_card(data),
-               target/'code-counter-mobile.svg': render_card(data, mobile=True)}
+    outputs = {path: json.dumps(data, ensure_ascii=False, indent=2)+'\n'}
     changed = False
     for output, content in outputs.items():
         if not output.exists() or output.read_text() != content:
