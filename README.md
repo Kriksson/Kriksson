@@ -7,7 +7,7 @@
 <p>
 <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/stats/code-counter-mobile.svg">
-    <img src="assets/profile/stats/code-counter.svg" alt="Моя практика: добавленные строки кода, публичные репозитории и вклад за год" width="100%">
+    <img src="assets/profile/stats/code-counter.svg" alt="Моя практика: добавленные строки кода, публичные и приватные репозитории, вклад за год" width="100%">
   </picture>
 </p>
 

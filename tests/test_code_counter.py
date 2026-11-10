@@ -12,17 +12,54 @@ spec.loader.exec_module(counter)
 
 
 class CounterTests(unittest.TestCase):
-    def test_public_contribution_heading_not_calendar_noise(self):
-        html = '<span>999</span><h2 id="js-contribution-activity-description"> 1,234\n contributions in the last year </h2><span>888</span>'
-        self.assertEqual(counter.parse_contributions(html), 1234)
-        self.assertEqual(counter.parse_contributions('<h2 id="js-contribution-activity-description">0 contributions in the last year</h2>'), 0)
-        with self.assertRaises(RuntimeError):
-            counter.parse_contributions('<h2>12 contributions in the last year</h2>')
+    def test_repository_count_includes_private_profile_and_owned_forks(self):
+        repos = [{'private':False, 'name':'Kriksson', 'owner':{'login':'Kriksson'}},
+                 {'private':True, 'name':'private-fixture', 'owner':{'login':'Kriksson'}},
+                 {'private':False, 'fork':True, 'owner':{'login':'Kriksson'}},
+                 {'private':False, 'owner':{'login':'Elsewhere'}}]
+        self.assertEqual(counter.account_repository_count(repos, 'Kriksson'), 3)
 
-    def test_public_repo_count_includes_profile_and_forks_but_never_private(self):
-        repos = [{'private':False, 'name':name, 'owner':{'login':'Kriksson'}} for name in ['demo','Kriksson','fork']]
-        repos += [{'private':True,'owner':{'login':'Kriksson'}}, {'private':False,'owner':{'login':'Elsewhere'}}]
-        self.assertEqual(counter.public_repository_count(repos, 'Kriksson'), 3)
+    def test_incomplete_private_permissions_fail_before_statistics_are_written(self):
+        class Api:
+            token = 'fixture'
+            oauth_scopes = {'repo'}
+            def get(self, path): return {'login':'Kriksson'}
+        with self.assertRaisesRegex(RuntimeError, 'read:user'):
+            counter.verify_account_access(Api(), 'Kriksson')
+        Api.oauth_scopes = {'repo','read:user'}
+        self.assertEqual(counter.verify_account_access(Api(), 'Kriksson')['login'], 'Kriksson')
+        with self.assertRaisesRegex(RuntimeError, 'profile owner'):
+            counter.verify_account_access(Api(), 'SomeoneElse')
+
+    def test_authenticated_contribution_query_and_failure(self):
+        class Api:
+            response = {'data':{'user':{'contributionsCollection':{'contributionCalendar':{'totalContributions':321}}}}}
+            def get(self, path, *, payload):
+                self.path, self.payload = path, payload
+                return self.response
+        api=Api()
+        self.assertEqual(counter.account_contributions(api, 'Kriksson'), 321)
+        self.assertEqual(api.path, 'graphql')
+        self.assertEqual(api.payload['variables'], {'login':'Kriksson'})
+        api.response = {'errors':[{'message':'fixture'}]}
+        with self.assertRaises(RuntimeError):counter.account_contributions(api, 'Kriksson')
+
+    def test_private_repository_metadata_cannot_enter_public_outputs(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            result={'repository':'owner/private-fixture','branch':'private-branch-fixture',
+                    'head':'private-sha-fixture','added_lines':12,'source_commits':2,'languages':{'Java':12}}
+            counter.write_results(root,[result],'Kriksson',total_repositories=12,contributions_last_year=321)
+            for p in root.rglob('*'):
+                if p.is_file():
+                    text=p.read_text()
+                    for secret in ['private-fixture','private-branch-fixture','private-sha-fixture']:
+                        self.assertNotIn(secret,text)
+            data=json.loads((root/'metrics/code-stats.json').read_text())
+            self.assertNotIn('repositories',data)
+            self.assertNotIn('languages',data)
+            self.assertEqual(data['total_repositories'],12)
+            self.assertEqual(data['added_lines'],12)
 
     def test_hero_contains_embedded_image_and_green_counter_and_activity(self):
         import xml.etree.ElementTree as ET
@@ -37,11 +74,11 @@ class CounterTests(unittest.TestCase):
             self.assertIn('9 репозиториев', svg)
             self.assertIn('263 вклада за год', svg)
 
-    def test_only_source_files_and_not_generated_tests_or_dependencies(self):
-        for path in ['src/App.java', 'frontend/src/main.tsx', 'db/migrations/V1.sql', 'java/solution.java']:
+    def test_tests_and_examples_count_but_generated_code_and_dependencies_do_not(self):
+        for path in ['src/App.java', 'frontend/src/main.tsx', 'db/migrations/V1.sql', 'java/solution.java',
+                     'src/test/java/BankTest.java', 'tests/a.py', 'src/A.spec.ts', 'test_a.py', 'examples/Demo.java']:
             self.assertIsNotNone(counter.source_language(path), path)
         for path in ['README.md', 'package-lock.json', 'config.yml', 'pom.xml', 'image.svg',
-                     'src/test/java/BankTest.java', 'tests/a.py', 'src/A.spec.ts', 'test_a.py',
                      'node_modules/a.js', 'target/generated/A.java', 'vendor/a.py',
                      'bot/moonloader/lib/a.lua', 'bundle.min.js', 'app.d.ts', 'gradlew', 'gradlew.bat']:
             self.assertIsNone(counter.source_language(path), path)
@@ -70,24 +107,24 @@ class CounterTests(unittest.TestCase):
         self.assertEqual(result['added_lines'], 3)
         self.assertEqual(result['source_commits'], 1)
 
-    def test_public_owner_only_excludes_private_forks_profile_and_empty_repos(self):
+    def test_owned_private_source_counts_and_forks_profile_empty_repos_do_not(self):
         common = dict(private=False, fork=False, size=1, owner={'login':'Kriksson'})
         repos = [{**common, 'name':'valid', 'full_name':'Kriksson/valid'},
-                 {**common, 'name':'private', 'private':True},
+                 {**common, 'name':'private', 'full_name':'Kriksson/private-fixture', 'private':True},
                  {**common, 'name':'fork', 'fork':True},
                  {**common, 'name':'Kriksson'},
                  {**common, 'name':'empty', 'size':0},
                  {**common, 'name':'other', 'owner':{'login':'Elsewhere'}}]
-        self.assertEqual([r['name'] for r in counter.eligible_repositories(repos, 'Kriksson')], ['valid'])
+        self.assertEqual([r['name'] for r in counter.eligible_repositories(repos, 'Kriksson')], ['private','valid'])
 
     def test_unchanged_data_does_not_refresh_timestamp_or_generate_empty_commits(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             results = [{'repository':'Kriksson/demo', 'head':'abc', 'branch':'main',
                         'added_lines':123, 'languages':{'Java':123}, 'source_commits':2}]
-            self.assertTrue(counter.write_results(root, results, 'Kriksson', '2026-10-25T12:00:00Z'))
+            self.assertTrue(counter.write_results(root, results, 'Kriksson', '2026-10-25T12:00:00Z',total_repositories=12,contributions_last_year=321))
             before = {str(p):p.read_bytes() for p in root.rglob('*') if p.is_file()}
-            self.assertFalse(counter.write_results(root, results, 'Kriksson', '2026-10-25T13:00:00Z'))
+            self.assertFalse(counter.write_results(root, results, 'Kriksson', '2026-10-25T13:00:00Z',total_repositories=12,contributions_last_year=321))
             self.assertEqual(before, {str(p):p.read_bytes() for p in root.rglob('*') if p.is_file()})
 
 
@@ -114,7 +151,7 @@ class GitHistoryTests(unittest.TestCase):
         self.git('commit', '--quiet', '-m', message)
         return self.git('rev-parse', 'HEAD')
 
-    def test_real_history_excludes_other_authors_blank_lines_tests_and_pure_renames(self):
+    def test_real_history_includes_authored_tests_but_excludes_other_authors_blank_lines_and_renames(self):
         self.write('src/App.java', 'class App {\n\n  int n;\n}\n')
         self.write('src/test/AppTest.java', 'not counted\n')
         first = self.commit('first')
@@ -124,7 +161,7 @@ class GitHistoryTests(unittest.TestCase):
         moved = self.commit('move')
         head = self.git('rev-parse','HEAD')
         result = counter.read_history(self.repo/'.git', head, {first,moved})
-        self.assertEqual(result['added_lines'], 3)
+        self.assertEqual(result['added_lines'], 4)
         self.assertEqual(result['source_commits'], 1)
         self.assertNotIn(other, {first,moved})
 
