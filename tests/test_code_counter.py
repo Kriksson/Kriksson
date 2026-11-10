@@ -4,6 +4,7 @@ from pathlib import Path
 import subprocess
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SCRIPT = Path(__file__).resolve().parents[1]/'scripts/update_code_counter.py'
 spec = importlib.util.spec_from_file_location('counter', SCRIPT)
@@ -12,6 +13,15 @@ spec.loader.exec_module(counter)
 
 
 class CounterTests(unittest.TestCase):
+    def test_authenticated_git_read_uses_environment_without_persisting_token(self):
+        token = 'test-only-token'
+        with tempfile.TemporaryDirectory() as temp, patch.dict(counter.os.environ, {'GH_TOKEN':token}):
+            counter.run_git('init', '--quiet', '--bare', temp)
+            version = counter.run_git('--version')
+            self.assertIn('git version', version)
+            self.assertNotIn(token, (Path(temp)/'config').read_text())
+            self.assertNotIn('AUTHORIZATION', (Path(temp)/'config').read_text())
+
     def test_repository_count_includes_private_profile_and_owned_forks(self):
         repos = [{'private':False, 'name':'Kriksson', 'owner':{'login':'Kriksson'}},
                  {'private':True, 'name':'private-fixture', 'owner':{'login':'Kriksson'}},

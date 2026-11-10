@@ -7,6 +7,7 @@ Only aggregate numbers are written to public files; private identifiers are neve
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
