@@ -109,6 +109,15 @@
 </p>
 
 <p>
+<a href="https://github.com/Kriksson/QA_Item_Bro">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile/projects/QA_Item_Bro-mobile.svg">
+    <img src="assets/profile/projects/QA_Item_Bro.svg" alt="QA ItemBro — UI- и API-автотесты ItemBro. Регистрация, сессии, CSRF, категории и объявления." width="100%">
+  </picture>
+</a>
+</p>
+
+<p>
 <a href="https://github.com/Kriksson/javaLearnAI">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/javaLearnAI-mobile.svg">
@@ -130,7 +139,7 @@
 <a href="https://github.com/Kriksson/QA_Learn">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/profile/projects/QA_Learn-mobile.svg">
-    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — UI-, API- и комбинированные автотесты на Java. Jenkins, Selenoid, Allure и параллельный запуск." width="100%">
+    <img src="assets/profile/projects/QA_Learn.svg" alt="QA_Learn — UI-, API- и интеграционные тесты с PostgreSQL. Testcontainers, Hibernate, Jenkins и Allure." width="100%">
   </picture>
 </a>
 </p>
