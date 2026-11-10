@@ -377,6 +377,17 @@
 </p>
 
 <p>
+<a href="https://github.com/Kriksson/coc-donation-bot">
+  <picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/profile/projects/coc-donation-bot-mobile.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/profile/projects/coc-donation-bot.svg">
+  <source media="(max-width: 600px)" srcset="assets/profile/motion/projects/coc-donation-bot-mobile.svg">
+  <img src="assets/profile/motion/projects/coc-donation-bot.svg" alt="COC — Компьютерное зрение и автоматизация Clash of Clans. Пожертвования, атаки и локальная веб-панель." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
 <a href="https://github.com/Kriksson/dtv-bot">
   <picture>
   <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/profile/projects/dtv-bot-mobile.svg">
