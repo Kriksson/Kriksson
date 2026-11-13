@@ -5,10 +5,10 @@
   "attribution": "github-login-or-unlinked-matching-git-name",
   "scope": "owned-public-private-nonfork-default-branches",
   "includes_tests_and_examples": true,
-  "added_lines": 80800,
-  "source_commits": 237,
+  "added_lines": 82584,
+  "source_commits": 245,
   "total_repositories": 13,
-  "contributions_last_year": 372,
+  "contributions_last_year": 382,
   "contributions_scope": "authenticated-public-private-last-year",
-  "updated_at": "2026-11-12T20:55:11Z"
+  "updated_at": "2026-11-13T17:51:25Z"
 }
