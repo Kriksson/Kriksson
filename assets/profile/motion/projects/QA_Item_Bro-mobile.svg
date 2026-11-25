@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" viewBox="0 0 640 180" role="img" aria-labelledby="title">
+  <title id="title">QA ItemBro. API · UI · Jenkins · Allure</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="640" height="180" fill="#131a1f"/><rect x="430" width="210" height="180" fill="#131a1f"/><rect x="430" width="210" height="180" fill="url(#grid)"/>
+  <path d="M430 0v180" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="28" y="75" fill="#e6ecea" font-size="34" font-weight="720" letter-spacing="-1">QA ItemBro</text><text x="30" y="119" fill="#a9b8b3" font-size="21">API · UI · Jenkins · Allure</text></g>
+  <g transform="scale(.59)"><g fill="none" stroke="#a9b8b3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m824 55 70-38 70 38v81l-70 38-70-38z" fill="#182127"/>
+          <path d="M846 73h44m-44 22 16 16 28-30m-44 54 16 16 28-30m24-45h30m-30 23h30m-30 23h30"/>
+          <path d="M782 42h42l36 20m70 0 34-20h53M894 174v9" stroke="#8ed6ad"/><path class="project-tracer" d="M782 42h42l36 20m70 0 34-20h53M894 174v9" fill="none" stroke="#8ed6ad" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+        </g><g fill="#8ed6ad"><circle cx="824" cy="42" r="5"/><circle cx="964" cy="62" r="5"/><circle cx="1051" cy="42" r="5"/><circle cx="894" cy="183" r="5"/></g></g>
+
+  <style>
+    .project-tracer { stroke-dasharray: 10 1200; stroke-dashoffset: 1200; opacity: .9; animation: project-trace 4.8s cubic-bezier(.22,.61,.36,1) .2s 1 both; }
+    .project-node { transform-box: fill-box; transform-origin: center; animation: project-pulse 1.8s cubic-bezier(.2,.7,.25,1) 1 both; }
+    .project-node:nth-of-type(2n) { animation-delay: .12s; }
+    @keyframes project-trace { to { stroke-dashoffset: 0; opacity: .25; } }
+    @keyframes project-pulse { 0% { transform: scale(.82); opacity: .62; } 36% { transform: scale(1.42); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .project-tracer, .project-node { animation: none; } }
+  </style>
+
+</svg>

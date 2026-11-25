@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="112" viewBox="0 0 1120 112" role="img" aria-labelledby="title description">
+  <title id="title">Технологии</title><desc id="description">Технологии in a quiet graphite terminal palette with mint signal accents.</desc>
+  <defs><pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" fill="none" stroke="#354a42" stroke-width=".8"/></pattern></defs>
+  <style>
+    @keyframes signal { 0%, 100% { opacity: .72; } 50% { opacity: 1; } }
+    .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: signal 2.4s ease-in-out 1 both; }
+    @media (prefers-reduced-motion: reduce) { .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: none; } }
+  </style>
+  <g class="motion"><rect width="1120" height="112" rx="12" fill="#131a1f"/>
+  <path d="M0 0H1120V112H0Z" fill="url(#grid)" opacity=".08"/>
+  <path d="M20 15H1100V97H20Z" fill="none" stroke="#354a42" stroke-opacity=".58"/>
+  <path d="M23 111H1097" stroke="#8ed6ad" stroke-width="2" opacity=".85"/>
+  <rect x="44" y="35.0" width="5" height="42" rx="2" fill="#8ed6ad"/>
+  <text x="65" y="71" fill="#e6ecea" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="42" font-weight="600" letter-spacing="-.8">Технологии</text>
+  <g transform="translate(1075.00 56.00)" fill="none" stroke="#a9b8b3" stroke-width="1.2">
+    <circle r="24"/><circle r="17" stroke-dasharray="2 4"/><path d="M-31 0H31M0-31V31" stroke-dasharray="4 5"/>
+    <path d="M-15 5l10-10 9 9 11-12" stroke="#8ed6ad" stroke-width="2"/>
+    <circle cx="15" cy="-8" r="2.6" fill="#8ed6ad" stroke="none"/>
+  </g></g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" viewBox="0 0 640 180" role="img" aria-labelledby="title description">
+  <title id="title">Обо мне</title>
+  <desc id="description">ex Java AQA @ AT-Store; now Fullstack QA @ Sber; AI assistant testing · LLM / RAG</desc>
+  <rect width="640" height="180" rx="8" fill="#131a1f"/>
+  <rect x="1" y="1" width="638" height="178" rx="7" fill="none" stroke="#354a42"/>
+  <path d="M8 1H632a7 7 0 0 1 7 7v30H1V8a7 7 0 0 1 7-7Z" fill="#182127"/>
+  <circle cx="21" cy="19" r="3.7" fill="#354a42"/>
+  <circle cx="36" cy="19" r="3.7" fill="#354a42"/>
+  <circle cx="51" cy="19" r="3.7" fill="#8ed6ad"/>
+  <path d="M20 57v108" stroke="#354a42"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" dominant-baseline="middle">
+    <text x="42" y="70"><tspan fill="#8ed6ad">ex  </tspan><tspan fill="#e6ecea">Java AQA @ AT-Store</tspan></text>
+    <text x="42" y="106"><tspan fill="#8ed6ad">now </tspan><tspan fill="#e6ecea">Fullstack QA @ Sber</tspan></text>
+    <text x="42" y="142" fill="#e6ecea">AI assistant testing · LLM / RAG</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="84" viewBox="0 0 640 84" role="img" aria-labelledby="title description">
+  <title id="title">Инструменты</title><desc id="description">Инструменты in a quiet graphite terminal palette with mint signal accents.</desc>
+  <defs><pattern id="grid-mobile" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" fill="none" stroke="#354a42" stroke-width=".8"/></pattern></defs>
+  <style>
+    @keyframes signal { 0%, 100% { opacity: .76; } 50% { opacity: 1; } }
+    .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: signal 2.4s ease-in-out 1 both; }
+    @media (prefers-reduced-motion: reduce) { .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: none; } }
+  </style>
+  <g class="motion">
+  <rect width="640" height="84" rx="12" fill="#131a1f"/>
+  <path d="M0 0H640V84H0Z" fill="url(#grid-mobile)" opacity=".08"/>
+  <path d="M18 11H622V73H18Z" fill="none" stroke="#354a42" stroke-opacity=".58"/>
+  <path d="M23 82H617" stroke="#8ed6ad" stroke-width="2" opacity=".85"/>
+  <rect x="21" y="37" width="5" height="34" rx="2" fill="#8ed6ad"/>
+  <text x="42" y="61" fill="#e6ecea" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" font-weight="600" letter-spacing="-.35">Инструменты</text>
+  <g transform="translate(600 42.0)" fill="none" stroke="#a9b8b3" stroke-width="1.2">
+    <circle r="18"/><circle r="12.5" stroke-dasharray="2 4"/><path d="M-24 0H24M0-24V24" stroke-dasharray="4 5"/>
+    <path d="M-11 4l7-7 7 6 8-9" stroke="#8ed6ad" stroke-width="2"/>
+    <circle cx="11" cy="-6" r="2.2" fill="#8ed6ad" stroke="none"/>
+  </g>
+  </g>
+</svg>

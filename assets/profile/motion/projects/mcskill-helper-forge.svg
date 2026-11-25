@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">MCSkill Helper. Инструменты модерации Minecraft</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="1120" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">MCSkill Helper</text><text x="52" y="141" fill="#a9b8b3" font-size="31">Инструменты модерации Minecraft</text></g>
+  <g transform="translate(160 18) scale(.82)"><g fill="none" stroke="#a9b8b3" stroke-width="2.2" stroke-linejoin="round">
+          <path d="m883 28 45 25v51l-45 26-45-26V53z" fill="#182127"/><path d="m883 28 45 25-45 26-45-26m45 26v51"/>
+          <path d="m954 73 33 18v38l-33 19-33-19V91z" fill="#182127"/><path d="m954 73 33 18-33 19-33-19m33 19v38"/>
+          <path d="M838 104h-35v44h35m149 1h38v-35h35" stroke="#8ed6ad"/><path class="project-tracer" d="M838 104h-35v44h35m149 1h38v-35h35" fill="none" stroke="#8ed6ad" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+          <path d="M817 127h12m-12 12h12m222-14h13m-13 12h13"/>
+        </g><g fill="#8ed6ad"><circle cx="803" cy="104" r="5"/><circle cx="1060" cy="114" r="5"/></g></g>
+
+  <style>
+    .project-tracer { stroke-dasharray: 10 1200; stroke-dashoffset: 1200; opacity: .9; animation: project-trace 4.8s cubic-bezier(.22,.61,.36,1) .2s 1 both; }
+    .project-node { transform-box: fill-box; transform-origin: center; animation: project-pulse 1.8s cubic-bezier(.2,.7,.25,1) 1 both; }
+    .project-node:nth-of-type(2n) { animation-delay: .12s; }
+    @keyframes project-trace { to { stroke-dashoffset: 0; opacity: .25; } }
+    @keyframes project-pulse { 0% { transform: scale(.82); opacity: .62; } 36% { transform: scale(1.42); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .project-tracer, .project-node { animation: none; } }
+  </style>
+
+</svg>

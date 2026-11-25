@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">UniCode. Настольный клиент Codex CLI</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="1120" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">UniCode</text><text x="52" y="141" fill="#a9b8b3" font-size="31">Настольный клиент Codex CLI</text></g>
+  <g transform="translate(160 18) scale(.82)"><g fill="none" stroke="#a9b8b3" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="804" y="28" width="224" height="130" rx="5" fill="#182127"/><path d="M804 49h224M820 39h1m12 0h1m12 0h1M872 71l-18 15 18 15m35-30 18 15-18 15m-13-32-10 34"/>
+          <path d="M884 158v18m-38 0h76" stroke="#8ed6ad"/><path d="M1028 80h34v52h-34" stroke="#354a42"/>
+        </g><g fill="#8ed6ad"><circle cx="1045" cy="91" r="3"/><circle cx="1045" cy="103" r="3"/><circle cx="1045" cy="115" r="3"/></g></g>
+</svg>

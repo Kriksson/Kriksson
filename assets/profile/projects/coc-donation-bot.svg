@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">COC. Автоматизация Clash of Clans</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="1120" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">COC</text><text x="52" y="141" fill="#a9b8b3" font-size="31">Автоматизация Clash of Clans</text></g>
+  <g transform="translate(160 18) scale(.82)"><g fill="none" stroke="#a9b8b3" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="m889 28 83 48v75l-83 47-83-47V76z" fill="#182127"/><path d="m889 28 83 48-83 48-83-48m83 48v74"/>
+          <path d="m853 87 17-10 17 10v20l-17 10-17-10zm54 1 17-10 17 10v20l-17 10-17-10zm-27 47 17-10 17 10v20l-17 10-17-10z" fill="#182127"/>
+          <path d="M806 151h-31v-31m197-29 42-24h41" stroke="#8ed6ad"/>
+        </g><g fill="#8ed6ad"><circle cx="775" cy="120" r="5"/><circle cx="1055" cy="67" r="5"/></g></g>
+</svg>

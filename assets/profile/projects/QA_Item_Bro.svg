@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">QA ItemBro. API и UI автотесты, Jenkins и Allure</title>
+  <defs>
+    <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+      <path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1120" height="190" fill="#131a1f"/>
+  <rect x="744" width="376" height="190" fill="#131a1f"/>
+  <rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">QA ItemBro</text>
+    <text x="52" y="141" fill="#a9b8b3" font-size="33">API · UI · Jenkins · Allure</text>
+  </g>
+  <g fill="none" stroke-width="2">
+    <circle cx="935" cy="95" r="69" stroke="#354a42" stroke-dasharray="3 6"/>
+    <path d="m857 106 78-43 78 43-78 43zm0-22 78-43 78 43-78 43z" fill="#182127" stroke="#a9b8b3"/>
+    <path d="M791 76h41l63 36 65-36 53 29h55" stroke="#8ed6ad"/>
+    <g fill="#8ed6ad" stroke="#131a1f">
+      <circle cx="832" cy="76" r="5"/><circle cx="895" cy="112" r="5"/><circle cx="960" cy="76" r="5"/><circle cx="1013" cy="105" r="5"/>
+    </g>
+  </g>
+</svg>

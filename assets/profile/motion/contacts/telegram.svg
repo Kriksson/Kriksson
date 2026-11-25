@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-labelledby="title description">
+  <title id="title">Telegram: @kriksson</title><desc id="description">Telegram: @kriksson in a quiet graphite terminal palette with mint signal accents.</desc>
+  <defs><pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" fill="none" stroke="#354a42" stroke-width=".8"/></pattern></defs>
+  <style>
+    @keyframes signal { 0%, 100% { opacity: .72; } 50% { opacity: 1; } }
+    .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: signal 2.4s ease-in-out 1 both; }
+    @media (prefers-reduced-motion: reduce) { .motion [stroke="#8ed6ad"], .motion [fill="#8ed6ad"] { animation: none; } }
+  </style>
+  <g class="motion"><rect x="1" y="1" width="54" height="54" rx="14" fill="#131a1f" stroke="#a9b8b3" stroke-width="2"/>
+  <path d="M7 6h42v44H7z" fill="url(#grid)" opacity=".75"/>
+  <circle cx="28" cy="28" r="17" fill="#182127" stroke="#a9b8b3" stroke-width="1.2"/>
+  <path d="m14 27 28-11-6.2 25.5-9.5-8.7-6.5 4.8 1.8-8-7.6-2.6Z" fill="#e6ecea" stroke="#e6ecea" stroke-linejoin="round"/>
+  <path d="m22 29 15-9-11 13" fill="none" stroke="#131a1f" stroke-width="1.45"/></g>
+</svg>

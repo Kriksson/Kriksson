@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">DTV-BOT. Публикации в Telegram</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="1120" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">DTV-BOT</text><text x="52" y="141" fill="#a9b8b3" font-size="31">Публикации в Telegram</text></g>
+  <g transform="translate(160 18) scale(.82)"><g fill="none" stroke="#a9b8b3" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="m816 85 194-60-49 143-46-39-29 30-7-55z" fill="#182127"/><path d="m879 104 131-79-104 100m0 0 36 43 9-39"/>
+          <path d="M1009 25h34v38m-34 98h34v-36" stroke="#8ed6ad"/>
+          <path d="M1043 63v24m0 38v-25" stroke="#354a42"/>
+        </g><g fill="#8ed6ad"><circle cx="1043" cy="96" r="5"/><circle cx="1043" cy="112" r="5"/></g></g>
+</svg>

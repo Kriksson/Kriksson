@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="190" viewBox="0 0 1120 190" role="img" aria-labelledby="title">
+  <title id="title">ItemBro. Java · Spring Boot · PostgreSQL</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="1120" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="#131a1f"/><rect x="744" width="376" height="190" fill="url(#grid)"/>
+  <path d="M744 0v190" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="50" y="88" fill="#e6ecea" font-size="58" font-weight="720" letter-spacing="-1">ItemBro</text><text x="52" y="141" fill="#a9b8b3" font-size="31">Java · Spring Boot · PostgreSQL</text></g>
+  <g transform="translate(160 18) scale(.82)"><g fill="none" stroke="#a9b8b3" stroke-width="2.4" stroke-linejoin="round">
+          <path d="m884 35 70 39v79l-70-39z" fill="#182127"/><path d="m884 35-70 39v79l70-39z" fill="#182127"/><path d="m814 74 70 40 70-40"/><path d="M884 114v76"/>
+          <path d="M845 92v39m17-29v39m62-37v32"/><path d="m814 152-34 19m174-19 37 20" stroke="#8ed6ad"/>
+        </g><g fill="#8ed6ad"><circle cx="780" cy="171" r="5"/><circle cx="991" cy="172" r="5"/></g></g>
+</svg>

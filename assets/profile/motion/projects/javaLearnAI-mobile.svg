@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" viewBox="0 0 640 180" role="img" aria-labelledby="title">
+  <title id="title">javaLearnAI. Практика Java Backend</title>
+  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M0 0H26M0 0V26" fill="none" stroke="#354a42" stroke-width="1"/></pattern></defs>
+  <rect width="640" height="180" fill="#131a1f"/><rect x="430" width="210" height="180" fill="#131a1f"/><rect x="430" width="210" height="180" fill="url(#grid)"/>
+  <path d="M430 0v180" stroke="#a9b8b3"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"><text x="28" y="75" fill="#e6ecea" font-size="34" font-weight="720" letter-spacing="-1">javaLearnAI</text><text x="30" y="119" fill="#a9b8b3" font-size="21">Практика Java Backend</text></g>
+  <g transform="scale(.59)"><g fill="none" stroke="#a9b8b3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m884 22 96 54v76l-96 54-96-54V76z" fill="#182127"/><path d="m884 22 96 54-96 54-96-54m96 54v76"/>
+          <path d="m850 94-17 16 17 16m68-32 17 16-17 16m-25-38-10 44"/>
+          <path d="M980 94h49l31-20" stroke="#8ed6ad"/><path class="project-tracer" d="M980 94h49l31-20" fill="none" stroke="#8ed6ad" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" pointer-events="none"/>
+        </g><circle cx="1060" cy="74" r="5" fill="#8ed6ad" class="project-node"/></g>
+
+  <style>
+    .project-tracer { stroke-dasharray: 10 1200; stroke-dashoffset: 1200; opacity: .9; animation: project-trace 4.8s cubic-bezier(.22,.61,.36,1) .2s 1 both; }
+    .project-node { transform-box: fill-box; transform-origin: center; animation: project-pulse 1.8s cubic-bezier(.2,.7,.25,1) 1 both; }
+    .project-node:nth-of-type(2n) { animation-delay: .12s; }
+    @keyframes project-trace { to { stroke-dashoffset: 0; opacity: .25; } }
+    @keyframes project-pulse { 0% { transform: scale(.82); opacity: .62; } 36% { transform: scale(1.42); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .project-tracer, .project-node { animation: none; } }
+  </style>
+
+</svg>
